@@ -1,0 +1,6 @@
+Amostras: 1200
+Treino: 960
+Teste: 240
+Acuracia_teste: 0.9250
+Perda_teste: 0.1750
+Rotulo confortavel: 20-26 C e 40-65 % de umidade.

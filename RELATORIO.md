@@ -26,3 +26,11 @@ Durante a configuração, a saída ficou constante quando as otimizações ESP-N
 ## Conclusão
 
 O ESP32-S3 executou o modelo TensorFlow Lite Micro no Wokwi e imprimiu previsões variáveis e coerentes no monitor serial. A imagem `evidencias/01-wokwi-hello-world.png` registra o circuito e as previsões finais.
+
+## Ponto extra — DHT22 e novo dataset
+
+Como extensão, foi criada uma segunda aplicação com um DHT22. Ela lê temperatura e umidade no GPIO 17 e usa um modelo novo para classificar o ambiente como `CONFORTAVEL` ou `ATENCAO`.
+
+O novo dataset tem 1.200 amostras sintéticas e reproduzíveis: 600 situações de conforto e 600 situações fora da faixa. A regra usada nos rótulos foi 20–26 °C e 40–65% de umidade para `CONFORTAVEL`. O modelo foi treinado no Google Colab, convertido para TensorFlow Lite int8 e alcançou 92,5% de acurácia em 240 amostras de teste.
+
+No Wokwi, 24 °C e 50% resultaram em probabilidade 0,98 e classe `CONFORTAVEL`; 32 °C e 70,5% resultaram em probabilidade 0,02 e classe `ATENCAO`. As imagens estão em `extra_dht22/evidencias/`.

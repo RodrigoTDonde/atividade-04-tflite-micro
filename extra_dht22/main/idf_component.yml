@@ -1,0 +1,5 @@
+dependencies:
+  espressif/esp-tflite-micro:
+    version: "1.4.0"
+  esp-idf-lib/dht:
+    version: "1.2.0"
