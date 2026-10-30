@@ -1,5 +1,14 @@
 # Atividade Avaliativa Prática 4/6 — TensorFlow Lite Micro
 
+## Portfólio de IA
+
+Trabalho acadêmico da pós-graduação, preservado no portfólio de [Rodrigo Teles Dondé](https://github.com/RodrigoTDonde).
+
+**Competências:** C/C++, TensorFlow Lite Micro, ESP-IDF, quantização INT8 e treinamento com dados sintéticos.
+
+**Origem acadêmica:** [rodrigodondesenai/atividade-04-tflite-micro](https://github.com/rodrigodondesenai/atividade-04-tflite-micro). [Registro da migração e créditos](PORTFOLIO.md).
+
+
 Este repositório documenta uma aplicação embarcada desenvolvida com **ESP-IDF**, **C/C++**, **TensorFlow Lite Micro** e o simulador **Wokwi**, tendo como alvo o **ESP32-S3 DevKitC-1**. O trabalho contém a reprodução do exemplo Hello World e uma extensão autoral com sensor DHT22, realizada para o ponto extra da atividade.
 
 ## Objetivos atendidos
